@@ -160,28 +160,3 @@ void bank::display()
 }
 
 
-int main()
-{
-bank b;
-int choice,ch;
-do{
-cout<<"1.accept 2.deposit 3.withdraw 4.display ";
-cout<<"\nEnter operation to be performed";
-cin>>choice;
-
-switch(choice)
-{
-case 1:b.accept();
-       break;
-case 2:b.deposit();
-       break;
-case 3:b.withdraw();
-       break;
-case 4:b.display();
-       break;
-}
-cout<<"\n Do you want to continue(0/1)";
-cin>>ch;
-}
-while(ch==1);
-}
